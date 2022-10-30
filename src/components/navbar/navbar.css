@@ -1,0 +1,12 @@
+.nav{
+    background-color: #29ca01e5;
+    height: 100px;
+}
+.nav-logo{
+    margin-left: 20px;
+}
+.nav-logo img{
+    margin-top: 20px;
+    width: 140px;
+    height: 50px;
+}
