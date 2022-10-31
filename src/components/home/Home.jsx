@@ -1,4 +1,4 @@
-import axios from "axios";
+
 import React, { useEffect, useState } from "react";
 import Page from "../page/Page";
 import "./home.css";
@@ -18,8 +18,9 @@ const Home = () => {
 
   const fetchingData = async () => {
     try {
-      const result = await axios("https://api.npoint.io/97d89162575a9d816661");
-      setData(result.data.cuentas);
+      const result = await fetch("https://api.npoint.io/97d89162575a9d816661");
+      const data = await result.json();
+      setData(data.cuentas);
     } catch (error) {
       console.log(error);
     }
